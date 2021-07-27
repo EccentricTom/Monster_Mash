@@ -7,7 +7,6 @@ import os
 
 # Set the Working directory as the project folder, makes it easier to organise project
 os.chdir(os.path.split(os.getcwd())[0])
-print(os.getcwd())
 path = os.getcwd()
 
 # Scrape the table cells from the url. In this case, the website is 5e.tools
@@ -28,8 +27,9 @@ for i in range(2, 35):
 driver.close()
 rows = []
 for content in contents:
-    if(content.find('or')!= -1):
-        replaced = content.replace("0 or 10", "0/10")
+    content = content.replace(",", "")
+    if content.find('or') != -1:
+        replaced = content.replace("0 or 10", "10")
         replaced = replaced.split()
         rows.append(replaced)
     else:
@@ -43,5 +43,7 @@ column_names[5:7] = [' '.join(column_names[5:7])]
 column_names[6:8] = [''.join(column_names[6:8])]
 column_names[7:9] = [' '.join(column_names[7:9])]
 df = pd.DataFrame(rows, columns=column_names)
+df[['XP', 'Armor Class', 'Prof. Bonus', 'Save DC']] = df[['XP', 'Armor Class', 'Prof. Bonus', 'Save DC']].astype(int)
+df.set_index('CR', inplace=True)
 df.to_csv('Data/CR_table.csv')
 
