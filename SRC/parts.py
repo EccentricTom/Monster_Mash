@@ -9,9 +9,9 @@ import os
 os.chdir(os.path.split(os.getcwd())[0])
 
 # Damage Resistances
-Damage_res_imm_vul = np.array(['Acid', 'Bludgeoning', 'Cold', 'Fire', 'Force', 'Lightning', 'Necrotic', 'Piercing', 'Poison',
+Damage = np.array(['Acid', 'Bludgeoning', 'Cold', 'Fire', 'Force', 'Lightning', 'Necrotic', 'Piercing', 'Poison',
                        'Psychic', 'Radiant', 'Slashing', 'Thunder'])
-np.save('Data/Damage_res_imm_vul.npy', Damage_res_imm_vul)
+np.save('Data/Damage_types.npy', Damage)
 
 # Condition Immunities
 Cond_im = np.array(['Blinded', 'Charmed', 'Deafened', 'Frightened', 'Grappled', 'Paralyzed', 'Poisoned', 'Prone',
