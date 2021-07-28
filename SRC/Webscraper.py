@@ -12,13 +12,18 @@ path = os.getcwd()
 # Scrape the table cells from the url. In this case, the website is 5e.tools
 url = 'https://5e.tools/crcalculator.html#0,13,0,3,false,Medium,1,10,false,0,false,0,'
 options = webdriver.chrome.options.Options()
+# These options stop the browser from opening visibly
 options.headless = True
 options.add_argument("--window-size=1920,1200")
 driver = webdriver.Chrome(executable_path=path+'\Driver\chromedriver.exe', options=options)
+# add a wait time to allow for all elements to laod
 driver.implicitly_wait(50)
 driver.get(url)
+# The table we are looking for has an id, so we search for it.
 table_columns = driver.find_element_by_id('msbcr')
 column_names = table_columns.text
+# Unfortunately it is not possible to just scrape the table completely, so instead the code will iterate over
+# each table row, searching by the Xpath
 contents = []
 for i in range(2, 35):
     value = driver.find_element_by_xpath('//*[@id="msbcr"]/tbody/tr['+str(i)+']')
