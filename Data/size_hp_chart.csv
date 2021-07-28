@@ -1,0 +1,7 @@
+Monster Size,Hit Die,Average HP per Die
+Tiny,d4,2.5
+Small,d6,3.5
+Medium,d8,4.5
+Large,d10,5.5
+Huge,d12,6.5
+Gargantuan,d20,10.5
