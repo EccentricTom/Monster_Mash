@@ -18,6 +18,15 @@ Cond_im = np.array(['Blinded', 'Charmed', 'Deafened', 'Frightened', 'Grappled', 
                     'Restrained'])
 np.save('Data/condition_imms.npy', Cond_im)
 
+# Type of monster
+type = np.array(['Aberration', 'Beast', 'Celestial', 'Construct', 'Dragon', 'Elemental', 'Fey', 'Fiend', 'Giant',
+                 'Humanoid', 'Monstrosity', 'Ooze', 'Plant', 'Undead'])
+np.save('Data/monster_type.npy', type)
+
+#Alignment, including unaligned if it doesn't matter
+alignment = np.array(["Chaotic Evil", "Chaotic Good", "Chaotic Neutral", "Lawful Evil", "Lawful Good", "Lawful Neutral",
+                      "Neutral Evil", "Neutral Good", "True Neutral", "Unaligned"])
+np.save("Data/alignment.npy", alignment)
 
 # Size and Hit die
 data = {"Monster Size": ['Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan'],
