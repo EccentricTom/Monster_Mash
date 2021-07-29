@@ -49,6 +49,7 @@ column_names[6:8] = [''.join(column_names[6:8])]
 column_names[7:9] = [' '.join(column_names[7:9])]
 df = pd.DataFrame(rows, columns=column_names)
 df[['XP', 'Armor Class', 'Prof. Bonus', 'Save DC']] = df[['XP', 'Armor Class', 'Prof. Bonus', 'Save DC']].astype(int)
+df['CR as float'] = pd.eval(df['CR'].fillna(1000.0))
 df.set_index('CR', inplace=True)
 df.to_csv('Data/CR_table.csv')
 

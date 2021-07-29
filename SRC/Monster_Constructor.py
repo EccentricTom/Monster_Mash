@@ -13,7 +13,7 @@ os.chdir(os.path.split(os.getcwd())[0])
 class MonsterFromCR():
     def __init__(self, CR, size="Medium", legendary=False, name='Monster', alignment="Unaligned",
                  type="Monstrosity", resistences=None, immunities=None, cond_immun=None, attacks=1):
-        self.CR = CR
+        self.target_CR = CR
         self.name = name
         self.legendary = legendary
         self.size = size
@@ -47,21 +47,28 @@ class MonsterFromCR():
         self.immunities = immunity
     def set_condition_immunity(self, cond_immunity):
         self.condition_immunity = cond_immunity
+    def set_AC(self, AC):
+        self.AC = AC
+        df = pd.read_csv('Data/CR_table.csv', index_col=0)
+        self.AC_CR = df['CR as float'].loc[df['Armor Class']== AC].tolist()[0]
+        del df
     def show(self):
         print("This is {name}, a CR{CR} {size} {type} of {alignment} alignment \n"
               "Tt has these resistances: {resistances} \n"
               "It has these immunities:  {immunities} \n"
               "It has these condition immunities: {cond_immun} \n"
-              "Legendary Status: {legend}".format(name=self.name, CR = self.CR, size=self.size, type=self.type,
+              "Legendary Status: {legend}".format(name=self.name, CR = self.target_CR, size=self.size, type=self.type,
                                                   alignment = self.alignment, resistances=self.resistences,
                                                   immunities=self.immunities, legend = self.legendary,
                                                   cond_immun=self.condition_immunity))
 
 
 
-test = MonsterFromCR(5, size="Gargantuan")
+test = MonsterFromCR(CR=5, size="Gargantuan")
 test.show()
 test.set_type("Humanoid")
 test.name_change("David")
 test.set_resistence(["Fire", "Cold"])
 test.show()
+test.set_AC(19)
+print(test.AC_CR)
