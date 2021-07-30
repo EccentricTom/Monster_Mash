@@ -10,7 +10,7 @@ os.chdir(os.path.split(os.getcwd())[0])
 
 # Damage Resistances
 Damage = np.array(['Acid', 'Bludgeoning', 'Cold', 'Fire', 'Force', 'Lightning', 'Necrotic', 'Piercing', 'Poison',
-                       'Psychic', 'Radiant', 'Slashing', 'Thunder'])
+                   'Psychic', 'Radiant', 'Slashing', 'Thunder'])
 np.save('Data/Damage_types.npy', Damage)
 
 # Condition Immunities
@@ -23,15 +23,16 @@ type = np.array(['Aberration', 'Beast', 'Celestial', 'Construct', 'Dragon', 'Ele
                  'Humanoid', 'Monstrosity', 'Ooze', 'Plant', 'Undead'])
 np.save('Data/monster_type.npy', type)
 
-#Alignment, including unaligned if it doesn't matter
+# Alignment, including unaligned if it doesn't matter
 alignment = np.array(["Chaotic Evil", "Chaotic Good", "Chaotic Neutral", "Lawful Evil", "Lawful Good", "Lawful Neutral",
                       "Neutral Evil", "Neutral Good", "True Neutral", "Unaligned"])
 np.save("Data/alignment.npy", alignment)
 
 # Size and Hit die
 data = {"Monster Size": ['Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan'],
-"Hit Die":['d4', 'd6', 'd8', 'd10', 'd12', 'd20'],
-"Average HP per Die": [2.5, 3.5, 4.5, 5.5, 6.5, 10.5]}
+        "Hit Die": ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'],
+        "Hit Die number": [4, 6, 8, 10, 12, 20],
+        "Average HP per Die": [2.5, 3.5, 4.5, 5.5, 6.5, 10.5]}
 size_hp_df = pd.DataFrame(data)
 size_hp_df.set_index('Monster Size', inplace=True)
 size_hp_df.to_csv("Data/size_hp_chart.csv")
