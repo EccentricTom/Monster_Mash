@@ -14,8 +14,8 @@ os.chdir(os.path.split(os.getcwd())[0])
 
 class MonsterFromCR:
     def __init__(self, cr, size="Medium", legendary=False, name='Monster', alignment="Unaligned",
-                 monster_type="Monstrosity", damage_source="strength", magic_source=None, resistances=None, immunities=None, cond_imm=None, attacks=1,
-                 is_flying=False):
+                 monster_type="Monstrosity", damage_source="strength", magic_source=None, resistances=None,
+                 immunities=None, cond_imm=None, attacks=1, is_flying=False):
         df_hp = pd.read_csv("Data/size_hp_chart.csv", index_col=0)
         df_cr = pd.read_csv("Data/CR_table.csv", index_col=0)
         self.target_CR = cr
@@ -25,9 +25,9 @@ class MonsterFromCR:
         self.type = monster_type
         self.damage_source = damage_source
         self.magic_source = magic_source
-        self.dpr_target = df_cr.loc[str(self.target_CR), "Damage/Round"]
+        self.dpr_target = df_cr.loc[str(self.target_CR), "Damage/Round"].split("-")
         self.dpr_cr = cr
-        self.df_target = df_cr.loc(srt(self.target_CR), "Save DC")
+        self.df_target = df_cr.loc(str(self.target_CR), "Save DC")
         self.dc_cr = cr
         self.alignment = alignment
         self.resistances = resistances
@@ -52,6 +52,7 @@ class MonsterFromCR:
         self.prof = df_cr.loc[str(self.target_CR), "Prof. Bonus"]
         self.ac = df_cr.loc[str(self.target_CR), "Armor Class"]
         self.effective_AC = self.ac
+        self.check_flying()
         self.AC_CR = cr
         self.hit_die = 1
         self.hit_die_type = df_hp.loc[size, 'Hit Die']
@@ -149,12 +150,15 @@ class MonsterFromCR:
 
     def set_ac(self, ac):
         self.ac = ac
+        self.check_flying()
+
+    def check_flying(self):
         df = pd.read_csv('Data/CR_table.csv', index_col=0)
         if self.flying is True and self.target_CR <= 10:
             self.effective_AC = self.ac + 2
             self.AC_CR = int(df['CR as float'].loc[df['Armor Class'] == self.effective_AC].tolist()[0])
         else:
-            self.AC_CR = int(df['CR as float'].loc[df['Armor Class'] == ac].tolist()[0])
+            self.AC_CR = int(df['CR as float'].loc[df['Armor Class'] == self.ac].tolist()[0])
         del df
 
     def assess_cr(self):
@@ -170,4 +174,3 @@ class MonsterFromCR:
                                                   alignment=self.alignment, resistances=self.resistances,
                                                   immunities=self.immunities, legend=self.legendary,
                                                   cond_imm=self.condition_immunity))
-

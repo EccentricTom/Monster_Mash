@@ -25,7 +25,7 @@ column_names = table_columns.text
 # Unfortunately it is not possible to just scrape the table completely, so instead the code will iterate over
 # each table row, searching by the Xpath
 contents = []
-for i in range(2, 35):
+for i in range(2, 36):
     value = driver.find_element_by_xpath('//*[@id="msbcr"]/tbody/tr['+str(i)+']')
     row = value.text
     contents.append(row)
