@@ -46,3 +46,31 @@ data = {'Expected Challenge Rating': cr_range, 'HP Multiplier by Resistances': r
 effective_hp = pd.DataFrame(data)
 effective_hp.set_index('Expected Challenge Rating', inplace=True)
 effective_hp.to_csv("Data/effective_hp_calc.csv")
+
+# Attacks and damage types
+attack_types = {"weapons": {
+    "slashing": {
+        "Handaxe": "d6",
+        "Sickle": "d4",
+        "Battleaxe": {
+            "one-handed": "d8",
+            "two-handed": "d10"
+        },
+        "Glaive": ["d10", "+5ft"],
+        "Greataxe": "d12",
+        "Greatsword": "2d6",
+        "Halberd": ["d10", "+5ft"],
+        "Longsword": {
+            "one-handed": "d8",
+            "two-handed": "d10"
+        },
+        "Scimitar": "d6",
+        "Shortsword": "d6",
+        "Whip": ["d4", "+5ft"]
+    },
+    "piercing": {
+        "dagger": "d4",
+
+    }
+}
+                }
