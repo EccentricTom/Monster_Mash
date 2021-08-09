@@ -30,6 +30,7 @@ np.save("Data/alignment.npy", alignment)
 
 # Size and Hit die
 data = {"Monster Size": ['Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan'],
+        "Size dice multiplier": [1, 1, 1, 2, 3, 4],
         "Hit Die": ['d4', 'd6', 'd8', 'd10', 'd12', 'd20'],
         "Hit Die number": [4, 6, 8, 10, 12, 20],
         "Average HP per Die": [2.5, 3.5, 4.5, 5.5, 6.5, 10.5]}

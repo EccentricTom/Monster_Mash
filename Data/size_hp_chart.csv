@@ -1,7 +1,7 @@
-Monster Size,Hit Die,Hit Die number,Average HP per Die
-Tiny,d4,4,2.5
-Small,d6,6,3.5
-Medium,d8,8,4.5
-Large,d10,10,5.5
-Huge,d12,12,6.5
-Gargantuan,d20,20,10.5
+Monster Size,Size dice multiplier,Hit Die,Hit Die number,Average HP per Die
+Tiny,1,d4,4,2.5
+Small,1,d6,6,3.5
+Medium,1,d8,8,4.5
+Large,2,d10,10,5.5
+Huge,3,d12,12,6.5
+Gargantuan,4,d20,20,10.5
