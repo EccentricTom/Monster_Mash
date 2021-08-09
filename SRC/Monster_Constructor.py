@@ -26,6 +26,7 @@ class MonsterFromCR:
         self.damage_source = damage_source
         self.magic_source = magic_source
         self.dpr_target = df_cr.loc[str(self.target_CR), "Damage/Round"].split("-")
+        self.attack_num = attacks
         self.dpr_cr = cr
         self.df_target = df_cr.loc(str(self.target_CR), "Save DC")
         self.dc_cr = cr
@@ -33,9 +34,6 @@ class MonsterFromCR:
         self.resistances = resistances
         self.immunities = immunities
         self.condition_immunity = cond_imm
-        self.hit_die = df_hp.loc[size, 'Hit Die']
-        self.hp_avg = df_hp.loc[size, 'Average HP per Die']
-        self.attack_num = attacks
         self.flying = is_flying
         self.str = 10
         self.str_mod = self.modifier(self.str)
@@ -59,7 +57,7 @@ class MonsterFromCR:
         self.hit_die_type_num = df_hp.loc[size, 'Hit Die number']
         self.hp_avg = df_hp.loc[size, 'Average HP per Die']
         self.hp_target_range = [int(i) for i in (df_cr.loc["5", "Hit Points"].split("-"))]
-        self.hp = int(sum(self.hp_target_range)/2)
+        self.hp = int(sum(self.hp_target_range) / 2)
         self.effective_hp = self.hp_adjust(self.hp)
         self.dc = df_cr["Save DC"].loc[df_cr.index == cr]
         self.DC_CR = cr
@@ -93,7 +91,7 @@ class MonsterFromCR:
 
     @staticmethod
     def modifier(stat):
-        mod = int((stat - 10)/2)
+        mod = int((stat - 10) / 2)
         return mod
 
     def set_stats(self, strength=None, dexterity=None, constitution=None, intelligence=None, wisdom=None,
@@ -160,6 +158,41 @@ class MonsterFromCR:
         else:
             self.AC_CR = int(df['CR as float'].loc[df['Armor Class'] == self.ac].tolist()[0])
         del df
+
+    def choose_dmg_die(self):
+        die_choice = input("choose die from d4 to d20 as damage die")
+        dice = 0
+        if die_choice == "d4":
+            dice = 4
+        if die_choice == "d6":
+            dice = 6
+        if die_choice == "d8":
+            dice = 8
+        if die_choice == "d10":
+            dice = 10
+        if die_choice == "d12":
+            dice = 12
+        if die_choice == "d20":
+            dice = 20
+        return dice
+
+    @staticmethod
+    def dice_avg(dice):
+        return sum(range(1, (dice + 1))) / dice
+
+    def damage_output(self, different_attacks=False):
+        if different_attacks is False:
+            damage_source = input("Strength or Dexterity?")
+            if damage_source == "Strength":
+                dice = self.choose_dmg_die()
+                dice_num = int(input("how many dice?"))
+                self.first_attack_dice = str(dice_num) + "D" + str(dice) + " + " + str(self.str_mod)
+                self.average_dmg = self.attack_num * (dice_num * self.dice_avg(dice) + self.str_mod)
+            if damage_source == "Dexterity":
+                dice = self.choose_dmg_die()
+                dice_num = int(input("how many dice?"))
+                self.first_attack_dice = str(dice_num) + "D" + str(dice) + " + " + str(self.dex_mod)
+                self.average_dmg = self.attack_num * (dice_num * self.dice_avg(dice) + self.dex_mod)
 
     def assess_cr(self):
         effective_cr = (self.effective_AC + 0) / 4
