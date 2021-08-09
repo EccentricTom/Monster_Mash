@@ -12,23 +12,30 @@ os.chdir(os.path.split(os.getcwd())[0])
 
 # This is the parent class when building around CR
 
+
 class MonsterFromCR:
     def __init__(self, cr, size="Medium", legendary=False, name='Monster', alignment="Unaligned",
                  monster_type="Monstrosity", damage_source="strength", magic_source=None, resistances=None,
-                 immunities=None, cond_imm=None, attacks=1, is_flying=False):
+                 immunities=None, cond_imm=None, attacks=1, is_flying=False, set_damage=True):
         df_hp = pd.read_csv("Data/size_hp_chart.csv", index_col=0)
         df_cr = pd.read_csv("Data/CR_table.csv", index_col=0)
         self.target_CR = cr
         self.name = name
         self.legendary = legendary
         self.size = size
+        self.weapon_multiplier = df_hp.loc[size, "Size dice multiplier"]
         self.type = monster_type
         self.damage_source = damage_source
         self.magic_source = magic_source
         self.dpr_target = df_cr.loc[str(self.target_CR), "Damage/Round"].split("-")
         self.attack_num = attacks
+        self.attack_dice = {}
+        if set_damage is False:
+            self.average_dmg = sum(self.dpr_target) / 2
+        else:
+            self.average_dmg = {}
         self.dpr_cr = cr
-        self.df_target = df_cr.loc(str(self.target_CR), "Save DC")
+        self.df_target = df_cr.loc[str(self.target_CR), "Save DC"]
         self.dc_cr = cr
         self.alignment = alignment
         self.resistances = resistances
@@ -156,12 +163,13 @@ class MonsterFromCR:
             self.effective_AC = self.ac + 2
             self.AC_CR = int(df['CR as float'].loc[df['Armor Class'] == self.effective_AC].tolist()[0])
         else:
-            self.AC_CR = int(df['CR as float'].loc[df['Armor Class'] == self.ac].tolist()[0])
+            self.AC_CR = self.ac
         del df
 
-    def choose_dmg_die(self):
+    @staticmethod
+    def choose_dmg_die():
+        dice = type(None)
         die_choice = input("choose die from d4 to d20 as damage die")
-        dice = 0
         if die_choice == "d4":
             dice = 4
         if die_choice == "d6":
@@ -174,25 +182,39 @@ class MonsterFromCR:
             dice = 12
         if die_choice == "d20":
             dice = 20
+
         return dice
 
     @staticmethod
     def dice_avg(dice):
         return sum(range(1, (dice + 1))) / dice
 
-    def damage_output(self, different_attacks=False):
-        if different_attacks is False:
-            damage_source = input("Strength or Dexterity?")
-            if damage_source == "Strength":
-                dice = self.choose_dmg_die()
+    def add_attack(self, is_physical=True, use_size=False, special_damage=False, num_of_attacks=1,
+                   spell=False):
+        if isinstance(self.average_dmg, dict) is False:
+            self.average_dmg = {}
+        if is_physical is True:
+            damage_source = input("What attribute does the monster use?")
+            print(damage_source)
+            mod = getattr(self, damage_source[:3] + "_mod")
+            dice = self.choose_dmg_die()
+            if use_size is False:
                 dice_num = int(input("how many dice?"))
-                self.first_attack_dice = str(dice_num) + "D" + str(dice) + " + " + str(self.str_mod)
-                self.average_dmg = self.attack_num * (dice_num * self.dice_avg(dice) + self.str_mod)
-            if damage_source == "Dexterity":
-                dice = self.choose_dmg_die()
-                dice_num = int(input("how many dice?"))
-                self.first_attack_dice = str(dice_num) + "D" + str(dice) + " + " + str(self.dex_mod)
-                self.average_dmg = self.attack_num * (dice_num * self.dice_avg(dice) + self.dex_mod)
+            else:
+                dice_num = self.weapon_multiplier
+            if special_damage is True:
+                damage_dice = self.choose_dmg_die()
+                special_dice_num = int(input("How many Dice?"))
+                added_damage_die = str(special_dice_num) + "d" + str(damage_dice)
+                added_damage = special_dice_num * self.dice_avg(damage_dice)
+            else:
+                added_damage_die = type(None)
+                added_damage = 0
+            print(dice_num)
+            self.attack_dice[len(self.attack_dice) + 1] = (str(dice_num) + "d" + str(dice) + " + " + str(mod)) + " + "
+            + added_damage_die
+            self.average_dmg[len(self.average_dmg)] = (
+                        num_of_attacks * (dice_num * self.dice_avg(dice) + mod + added_damage))
 
     def assess_cr(self):
         effective_cr = (self.effective_AC + 0) / 4
