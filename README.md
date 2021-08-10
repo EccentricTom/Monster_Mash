@@ -5,3 +5,9 @@ This is a small project to make it easier to homebrew monsters for Dungeons and 
 Credits:   
 CR table: https://5e.tools/  
 Effective spell damage table: u/SuscriptorJusticiero on Reddit
+
+To do:  
+- work on adding spellcasting to damage calculations
+- finishing working on AC calculation
+- factor in dc calcs and prof. ranking
+- work out how to use in GUI format (long term goal)
