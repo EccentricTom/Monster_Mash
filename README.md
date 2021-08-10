@@ -10,4 +10,4 @@ To do:
 - work on adding spellcasting to damage calculations
 - finishing working on AC calculation
 - factor in dc calcs and prof. ranking
-- work out how to use in GUI format (long term goal)
+- work out how to use in GUI format (long term goal) 
