@@ -3,6 +3,7 @@
 # Import the necessary libraries
 from selenium import webdriver
 import pandas as pd
+from bs4 import BeautifulSoup
 import os
 
 # Set the Working directory as the project folder, makes it easier to organise project
@@ -15,8 +16,8 @@ options = webdriver.chrome.options.Options()
 # These options stop the browser from opening visibly
 options.headless = True
 options.add_argument("--window-size=1920,1200")
-driver = webdriver.Chrome(executable_path=path+'\Driver\chromedriver.exe', options=options)
-# add a wait time to allow for all elements to laod
+driver = webdriver.Chrome(executable_path=path + '\Driver\chromedriver.exe', options=options)
+# add a wait time to allow for all elements to load
 driver.implicitly_wait(50)
 driver.get(url)
 # The table we are looking for has an id, so we search for it.
@@ -26,7 +27,7 @@ column_names = table_columns.text
 # each table row, searching by the Xpath
 contents = []
 for i in range(2, 36):
-    value = driver.find_element_by_xpath('//*[@id="msbcr"]/tbody/tr['+str(i)+']')
+    value = driver.find_element_by_xpath('//*[@id="msbcr"]/tbody/tr[' + str(i) + ']')
     row = value.text
     contents.append(row)
 driver.close()
@@ -52,4 +53,4 @@ df[['XP', 'Armor Class', 'Prof. Bonus', 'Save DC']] = df[['XP', 'Armor Class', '
 df['CR as float'] = pd.eval(df['CR'].fillna(1000.0))
 df.set_index('CR', inplace=True)
 df.to_csv('Data/CR_table.csv')
-
+del df

@@ -16,7 +16,7 @@ os.chdir(os.path.split(os.getcwd())[0])
 class MonsterFromCR:
     def __init__(self, cr, size="Medium", legendary=False, name='Monster', alignment="Unaligned",
                  monster_type="Monstrosity", damage_source="strength", magic_source=None, resistances=None,
-                 immunities=None, cond_imm=None, attacks=1, is_flying=False, set_damage=True):
+                 immunities=None, cond_imm=None, is_flying=False, set_damage=True):
         df_hp = pd.read_csv("Data/size_hp_chart.csv", index_col=0)
         df_cr = pd.read_csv("Data/CR_table.csv", index_col=0)
         self.target_CR = cr
@@ -28,12 +28,12 @@ class MonsterFromCR:
         self.damage_source = damage_source
         self.magic_source = magic_source
         self.dpr_target = df_cr.loc[str(self.target_CR), "Damage/Round"].split("-")
-        self.attack_num = attacks
         self.attack_dice = {}
         if set_damage is False:
             self.average_dmg = sum(self.dpr_target) / 2
         else:
             self.average_dmg = {}
+        self.damage_type = {}
         self.dpr_cr = cr
         self.df_target = df_cr.loc[str(self.target_CR), "Save DC"]
         self.dc_cr = cr
@@ -207,17 +207,37 @@ class MonsterFromCR:
                 special_dice_num = int(input("How many Dice?"))
                 added_damage_die = str(special_dice_num) + "d" + str(damage_dice)
                 added_damage = special_dice_num * self.dice_avg(damage_dice)
-            else:
-                added_damage_die = type(None)
-                added_damage = 0
-            print(dice_num)
-            self.attack_dice[len(self.attack_dice) + 1] = (str(dice_num) + "d" + str(dice) + " + " + str(mod)) + " + "
-            + added_damage_die
-            self.average_dmg[len(self.average_dmg)] = (
+                self.attack_dice[len(self.attack_dice) + 1] = (
+                        str(dice_num) + "d" + str(dice) + " + " + str(mod) + " + " + added_damage_die)
+                self.average_dmg[len(self.average_dmg)] = (
                         num_of_attacks * (dice_num * self.dice_avg(dice) + mod + added_damage))
+            else:
+                self.attack_dice[len(self.attack_dice) + 1] = (str(dice_num) + "d" + str(dice) + " + " + str(mod))
+                self.average_dmg[len(self.average_dmg)] = (num_of_attacks * (dice_num * self.dice_avg(dice) + mod))
+
+            self.assess_damage_cr()
+
+    def assess_damage_cr(self):
+        checkpoint = input("Are you finished adding attacks?")
+        if checkpoint.lower() == "no" or "n":
+            print("Great, add some more attacks!")
+            pass
+        df_cr = pd.read_csv("Data/CR_table.csv", index_col=0)
+        df_cr[["DPR Lower", "DPR Upper"]] = df_cr["Damage/Round"].str.split("-", expand=True).astype(int)
+        checkpoint_2 = input("Will the most have varying damage per round?")
+        if checkpoint_2.lower() == "no" or "n":
+            checkpoint_3 = input("Can the monster use all its attacks in a round?")
+            if checkpoint_3.lower() == "yes" or "y":
+                total_damage = sum(self.average_dmg.values())
+                self.dpr_cr = df_cr.index[
+                    (df_cr["DPR Lower"] <= total_damage) & (df_cr["DPR Upper"] >= total_damage)].tolist()[0]
+            else:
+                print("Choose the most damage the Monster can do a round")
+                print(self.attack_dice)
+        del df_cr
 
     def assess_cr(self):
-        effective_cr = (self.effective_AC + 0) / 4
+        effective_cr = (self.effective_AC + self.dpr_cr + self.target_CR + self.target_CR) / 4
         return effective_cr == self.target_CR
 
     def show(self):
