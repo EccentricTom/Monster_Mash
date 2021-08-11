@@ -16,7 +16,8 @@ os.chdir(os.path.split(os.getcwd())[0])
 class MonsterFromCR:
     def __init__(self, cr, size="Medium", legendary=False, name='Monster', alignment="Unaligned",
                  monster_type="Monstrosity", damage_source="strength", magic_source=None, resistances=None,
-                 immunities=None, cond_imm=None, is_flying=False, set_damage=True):
+                 immunities=None, cond_imm=None, is_flying=False, set_damage=True, is_spellcaster=False,
+                 innate_caster=False):
         df_hp = pd.read_csv("Data/size_hp_chart.csv", index_col=0)
         df_cr = pd.read_csv("Data/CR_table.csv", index_col=0)
         self.target_CR = cr
@@ -35,7 +36,10 @@ class MonsterFromCR:
             self.average_dmg = {}
         self.damage_type = {}
         self.dpr_cr = cr
-        self.df_target = df_cr.loc[str(self.target_CR), "Save DC"]
+        if is_spellcaster:
+            self.spellcaster_type = input("select from full caster, half caster, quarter caster")
+        self.innate_casting = innate_caster
+        self.dc_target = df_cr.loc[str(self.target_CR), "Save DC"]
         self.dc_cr = cr
         self.alignment = alignment
         self.resistances = resistances
@@ -214,8 +218,12 @@ class MonsterFromCR:
             else:
                 self.attack_dice[len(self.attack_dice) + 1] = (str(dice_num) + "d" + str(dice) + " + " + str(mod))
                 self.average_dmg[len(self.average_dmg)] = (num_of_attacks * (dice_num * self.dice_avg(dice) + mod))
+        if spell:
+            if isinstance(self.spellcaster_type, str) is False or self.innate_casting is None:
+                print("This monster cannot cast any spells, you should change that first")
+                pass
+        self.assess_damage_cr()
 
-            self.assess_damage_cr()
 
     def assess_damage_cr(self):
         checkpoint = input("Are you finished adding attacks?")
