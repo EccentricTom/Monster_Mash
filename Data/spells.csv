@@ -114,11 +114,11 @@ Negative Energy Flood,Single,no,5d12,1,None,FALSE,Necrotic,Save  0.5,FALSE,60ft,
 Steel Wind Strike,x5,no,6d10,1,None,FALSE,Force,Attack roll,FALSE,30ft,,,5,,,,,33,33,33,33,33,1,FALSE,None
 Synaptic Static,AoE (large),no,8d6,1,None,FALSE,Psychic,Save  0.5,FALSE,120ft,,Debuff,5,,,,,28,28,28,28,28,2.5,FALSE,None
 Transmute Rock  (Ceiling to mud),AoE (large),no,4d8,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,CC,5, , , , ,18,18,18,18,18,2.5,FALSE,None
-Wall of Light,AoE (line),no,4d8,1,None,TRUE,Radiant,Save  0.5,FALSE,120ft,,Debuff,5,,,,,18,22.5,27,31.5,36,2.5,FALSE,None
-Wall of Light,Single,no,4d8,1,None,TRUE,Radiant,Attack roll,FALSE,60ft,,,5,,,,,18,22.5,27,31.5,36,1,FALSE,None
-Wrath of Nature (Rocks),Single,no,3d8,1,None,TRUE,Bludgeon,Attack roll,FALSE,120ft,,CC,5,,,,,13.5,13.5,13.5,13.5,13.5,1,FALSE,None
-Wrath of Nature (Trees),AoE (large),no,4d6,1,None,TRUE,Slashing,Save null,FALSE,120ft,,,5,,,,,14,14,14,14,14,2.5,FALSE,None
-Blade Barrier,AoE,no,6d10,1,None,FALSE,Slashing,Save  0.5,TRUE,90,,CC,6, , , , , ,33,33,33,33,2.5,FALSE,None
+Wall of Light,AoE (line),no,4d8,1,None,TRUE,Radiant,Save  0.5,end of turn,120ft,,Debuff,5,,,,,18,22.5,27,31.5,36,2.5,FALSE,TRUE
+Wall of Light,Single,no,4d8,1,None,TRUE,Radiant,Attack roll,end of turn,60ft,,,5,,,,,18,22.5,27,31.5,36,1,FALSE,TRUE
+Wrath of Nature (Rocks),Single,no,3d8,1,None,TRUE,Bludgeon,Attack roll,FALSE,120ft,,CC,5,,,,,13.5,13.5,13.5,13.5,13.5,1,FALSE,TRUE
+Wrath of Nature (Trees),AoE (large),no,4d6,1,None,TRUE,Slashing,Save null,FALSE,120ft,,,5,,,,,14,14,14,14,14,2.5,FALSE,TRUE
+Blade Barrier,AoE,no,6d10,1,None,FALSE,Slashing,Save  0.5,start of turn,90,,CC,6, , , , , ,33,33,33,33,2.5,FALSE,None
 Bones of Earth  (Crush to ceiling),x6,no,6d6,1,None,FALSE,Bludgeon,Save null,FALSE,120,,,6, , , , , ,21,21,21,21,1,FALSE,None
 Chain Lightning,x4,no,10d8,1,None,FALSE,Lightning,Save  0.5,FALSE,150,,,6, , , , , ,180,225,270,315,1,FALSE,None
 Circle of Death,AoE (huge),no,8d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,150,,,6, , , , , ,28,35,42,49,2.5,FALSE,None
