@@ -37,7 +37,12 @@ class MonsterFromCR:
         self.damage_type = {}
         self.dpr_cr = cr
         if is_spellcaster:
-            self.spellcaster_type = input("select from full caster, half caster, quarter caster")
+            self.spellcaster_type = input("select from full caster, half caster, third caster")
+            print("Choose spellcasting level?")
+            if input() == "yes" or "y":
+                self.spellcaster_level = int(input("What spellcasting level?"))
+            else:
+                self.spellcaster_level = int(self.hp/(self.hp_avg + self.con_mod))
         self.innate_casting = innate_caster
         self.dc_target = df_cr.loc[str(self.target_CR), "Save DC"]
         self.dc_cr = cr
@@ -74,6 +79,9 @@ class MonsterFromCR:
         self.DC_CR = cr
         del df_hp
         del df_cr
+
+    def spellcasting_capabilities(self):
+
 
     def hp_from_dice(self, dice_num):
         hp = dice_num * (self.hp_avg + self.con_mod)
@@ -194,7 +202,7 @@ class MonsterFromCR:
         return sum(range(1, (dice + 1))) / dice
 
     def add_attack(self, is_physical=True, use_size=False, special_damage=False, num_of_attacks=1,
-                   spell=False):
+                   bonus=False):
         if isinstance(self.average_dmg, dict) is False:
             self.average_dmg = {}
         if is_physical is True:
@@ -213,19 +221,19 @@ class MonsterFromCR:
                 added_damage = special_dice_num * self.dice_avg(damage_dice)
                 self.attack_dice[len(self.attack_dice) + 1] = (
                         str(dice_num) + "d" + str(dice) + " + " + str(mod) + " + " + added_damage_die)
-                self.average_dmg[len(self.average_dmg)] = (
+                self.average_dmg[len(self.average_dmg) + 1] = (
                         num_of_attacks * (dice_num * self.dice_avg(dice) + mod + added_damage))
             else:
                 self.attack_dice[len(self.attack_dice) + 1] = (str(dice_num) + "d" + str(dice) + " + " + str(mod))
-                self.average_dmg[len(self.average_dmg)] = (num_of_attacks * (dice_num * self.dice_avg(dice) + mod))
-        if spell:
-            if isinstance(self.spellcaster_type, str) is False or self.innate_casting is None:
-                print("This monster cannot cast any spells, you should change that first")
-                pass
+                self.average_dmg[len(self.average_dmg) + 1] = (num_of_attacks * (dice_num * self.dice_avg(dice) + mod))
+        else:
+            damage_dice = self.choose_dmg_die()
+            dice_num = int(input("How many Dice?"))
+            self.attack_dice[len(self.attack_dice) + 1] = str(dice_num) + "d" + str(damage_dice)
+            self.average_dmg[len(self.average_dmg) + 1] = dice_num * damage_dice
         self.assess_damage_cr()
 
-
-    def assess_damage_cr(self):
+    def assess_damage_cr(self, spellr = False):
         checkpoint = input("Are you finished adding attacks?")
         if checkpoint.lower() == "no" or "n":
             print("Great, add some more attacks!")
