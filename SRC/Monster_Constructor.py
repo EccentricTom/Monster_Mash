@@ -81,7 +81,7 @@ class MonsterFromCR:
         del df_cr
 
     def spellcasting_capabilities(self):
-
+        pass
 
     def hp_from_dice(self, dice_num):
         hp = dice_num * (self.hp_avg + self.con_mod)
