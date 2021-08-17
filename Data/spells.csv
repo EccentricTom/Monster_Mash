@@ -1,153 +1,150 @@
-Spell,Target/area,Incorporates Weapon,Base damage,Number of attacks,Modifier,Per Turn,Type,Defense,Reaction-based,Range,Effect Area,Effect,Base level,1,2,3,4,5,6,7,8,9,Multiplier,Bonus Action
-Cantrips,,,,,,,,,,,,,,Lv1,,Lv5,,,Lv11,,,Lv17,,
-Acid Splash,x2,no,1d6,1,None,FALSE,Acid,Save null,FALSE,60,,,0,3.5,,7,,,10.5,,,14,2,FALSE
-Booming Blade,Single,yes,1d8,1,None,FALSE,Thunder,,FALSE,5,,,0,4.5,,13.5,,,22.5,,,31.5,1,FALSE
-Chill Touch,Single,no,1d8,1,None,FALSE,Necrotic,Attack roll,FALSE,120,,Debuff,0,4.5,,9,,,13.5,,,18,1,FALSE
-Create Bonfire,Single,no,1d8,1,None,TRUE,Fire,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE
-Create Bonfire,Single,no,1d8,1,None,TRUE,Fire,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE
-Eldritch Blast,Spread,no,1d10,1,None,FALSE,Force,Attack roll,FALSE,120,,,0,5.5,,11,,,16.5,,,22,1,FALSE
-Fire Bolt,Single,no,1d10,1,None,FALSE,Fire,Attack roll,FALSE,120,,,0,5.5,,11,,,16.5,,,22,1,FALSE
-Frostbite ,Single,no,1d6,1,None,FALSE,Cold,Save null,FALSE,60,,Debuff,0,3.5,,7,,,10.5,,,14,2,FALSE
-Greenflame Blade  ,x2,yes,1d8,1,None,FALSE,Fire,Attack roll,FALSE,5,,,0,4.5,,13.5,,,22.5,,,31.5,1,FALSE
-Infestation,Single,no,1d6,1,None,FALSE,Poison,Save null,FALSE,30,,CC,0,3.5,,7,,,10.5,,,14,1,FALSE
-Lightning Lure  ,Single,no,1d8,1,None,FALSE,Lightning,Save null,FALSE,15,,CC,0,4.5,,9,,,13.5,,,18,1,FALSE
-Poison Spray,Single,no,1d12,1,None,FALSE,Poison,Save null,FALSE,10,,,0,6.5,,13,,,19.5,,,26,1,FALSE
-Primal Savagery,Single,no,1d10,1,None,FALSE,Acid,Attack roll,FALSE,Melee,,,0,5.5,,11,,,16.5,,,22,1,FALSE
-Produce Flame,Single,no,1d8,1,None,FALSE,Fire,Attack roll,FALSE,30,,,0,4.5,,9,,,13.5,,,18,1,FALSE
-Ray of Frost,Single,no,1d8,1,None,FALSE,Cold,Attack roll,FALSE,60,,CC,0,4.5,,9,,,13.5,,,18,1,FALSE
-Sacred Flame,Single,no,1d8,1,None,FALSE,Radiant,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE
-Shocking Grasp,Single,no,1d8,1,None,FALSE,Lightning,Attack roll,FALSE,Touch,,Debuff,0,4.5,,9,,,13.5,,,18,1,FALSE
-Sword Burst  ,AoE (small),no,1d6,1,None,FALSE,Force,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE
-Thorn Whip,Single,no,1d6,1,None,FALSE,Piercing,Attack roll,FALSE,30,,CC,0,3.5,,7,,,10.5,,,14,1,FALSE
-Thunderclap ,AoE (small),no,1d6,1,None,FALSE,Thunder,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE
-Thunderclap ,AoE (small),no,1d6,1,None,FALSE,Thunder,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE
-Toll the Dead,Single,no,1d8,1,None,FALSE,Necrotic,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE
-Vicious Mockery,Single,no,1d4,1,None,FALSE,Psychic,Save null,FALSE,60,,Debuff,0,2.5,,5,,,7.5,,,10,1,FALSE
-Word of Radiance,AoE (small),no,1d6,1,None,FALSE,Radiant,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE
-Arms of Hadar,AoE,no,2d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,0,10,Debuff,1,7,10.5,14,17.5,21,24.5,28,31.5,35,2.5,FALSE
-Burning Hands,AoE,no,3d6,1,None,FALSE,Fire,Save  0.5,FALSE,0,15,,1,10.5,14,17.5,21,24.5,28,31.5,35,38.5,2.5,FALSE
-Catapult ,Single,no,3d8,1,None,FALSE,Bludgeon,Save null,FALSE,150,,,1,13.5,18,22.5,27,31.5,36,40.5,45,49.5,1,FALSE
-Chaos Bolt,Single,no,2d8+1d6,1,None,FALSE,varies,Attack roll,FALSE,120ft,,Fork,1,12.5,16,19.5,23,26.5,30,33.5,37,40.5,1,FALSE
-Chromatic Orb,Single,no,3d8,1,None,FALSE,varies,Attack roll,FALSE,90,,,1,13.5,18,22.5,27,31.5,36,40.5,45,49.5,1,FALSE
-Dissonant Whispers,Single,no,3d6,1,None,FALSE,Psychic,Save  0.5,FALSE,60,,CC,1,10.5,14,17.5,21,24.5,28,31.5,35,38.5,1,FALSE
-Earth Tremor ,AoE (small),no,1d6,1,None,FALSE,Bludgeon,Save null,FALSE,0,10,,1,3.5,7,10.5,14,17.5,21,24.5,28,31.5,2.5,FALSE
-Ensnaring Strike,Single,yes,1d6,1,None,TRUE,Piercing,Save ends,FALSE,0,,DoT,1,3.5,7,10.5,14,17.5,21,24.5,28,31.5,1,FALSE
-Guiding Bolt,Single,no,4d6,1,None,FALSE,Radiant,Attack roll,FALSE,120,,Buff,1,14,17.5,21,24.5,28,31.5,35,38.5,42,1,FALSE
-Hail of Thorns,AoE (small),yes,d10,1,None,FALSE,Piercing,Save  0.5,FALSE,0,,,1,5.5,11,16.5,22,27.5,33,33,33,33,2.5,FALSE
-Hellish Rebuke,Single,no,2d10,1,None,FALSE,Fire,Save  0.5,TRUE,60,,,1,11,16.5,22,27.5,33,38.5,44,49.5,55,1,FALSE
-Ice Knife ,Single + AoE,no,1d10+2d6,1,None,FALSE,combined,,FALSE,60,,,1,12.5,16,19.5,23,26.5,30,33.5,37,40.5,1,FALSE
-Inflict Wounds,Single,no,3d10,1,None,FALSE,Necrotic,Attack roll,FALSE,Touch,,,1,16.5,22,27.5,33,38.5,44,49.5,55,60.5,1,FALSE
-Magic Missile,Spread,no,1d4+1,3,None,FALSE,Force, ,FALSE,120,,,1,10.5,14,17.5,21,24.5,28,31.5,35,38.5,1,FALSE
-Ray of Sickness,Single,no,2d8,1,None,FALSE,Poison,Attack roll,FALSE,60,,Debuff,1,9,13.5,18,22.5,27,31.5,36,40.5,45,1,FALSE
-Searing Smite,Single,yes, 1d6,1,None,TRUE,Fire,Save ends,FALSE,Melee,,DoT,1,3.5,7,10.5,14,17.5,21,24.5,28,31.5,1,FALSE
-Thunderous Smite,Single,yes, 2d6,1,None,FALSE,Thunder, ,FALSE,Melee,,CC,1,7,7,7,7,7,7,7,7,7,1,FALSE
-Thunderwave,AoE,no,2d8,1,None,FALSE,Thunder,Save  0.5,FALSE,0,15,CC,1,9,13.5,18,22.5,27,31.5,36,40.5,45,2.5,FALSE
-Witch Bolt,Single,no,1d12+1d12,1,None,TRUE,Lightning,Attack roll,FALSE,30,,DoT,1,6.5,13,19.5,26,32.5,39,45.5,52,58.5,1,FALSE
-Wrathful Smite,Single,yes, 1d6,1,None,FALSE,Psychic, ,FALSE,Melee,,Debuff,1,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,1,FALSE
-Aganazzar's Scorcher ,AoE (line),no,3d8,1,None,FALSE,Fire,Save  0.5,FALSE,0,30,,2, ,13.5,18,22.5,27,31.5,36,40.5,45,2.5,FALSE
-Branding Smite,Single,yes,2d6,1,None,FALSE,Radiant, ,FALSE,0,,Debuff,2, ,7,10.5,14,17.5,21,24.5,28,31.5,1,FALSE
-Cloud of Daggers,Single,no,4d4,1,None,TRUE,Slashing, ,FALSE,60,,,2, ,10,15,20,25,30,35,40,45,1,FALSE
-Cordon of Arrows,Spread,no,1d6,4,None,FALSE,Piercing,Save null,FALSE,5,30,,2, ,14,21,28,35,42,49,56,63,1,FALSE
-Dragon’s Breath,AoE (small),no,3d6,1,None,FALSE,varies,Save  0.5,FALSE,0,15,,2,,10.5,15,19.5,24,28.5,33,37.5,42,2.5,FALSE
-Dust Devil ,AoE (small),no,1d8,1,None,TRUE,Bludgeon,Save  0.5,FALSE,60,,CC,2, ,4.5,9,13.5,18,22.5,27,31.5,36,2.5,FALSE
-Flame Blade,Spread,no,3d6,1,None,TRUE,Fire,Attack roll,FALSE,Melee,,,2, ,10.5,10.5,14,14,17.5,17.5,21,21,1,FALSE
-Flaming Sphere,AoE (small),no,2d6,1,None,TRUE,Fire,Save  0.5,FALSE,60,,BA,2, ,7,10.5,14,17.5,21,24.5,28,31.5,2.5,TRUE
-Heat Metal,Single,no,2d8,1,None,TRUE,Fire, ,FALSE,60,,"[Debuff, BA]",2, ,9,13.5,18,22.5,27,31.5,36,40.5,1,TRUE
-Maximillian's Earthen Grasp ,Single,no,2d6,1,None,TRUE,Bludgeon,Save ends,FALSE,30,,Debuff,2, ,7,7,7,7,7,7,7,7,1,FALSE
-Melf's Acid Arrow,Single,no,4d4+2d4,1,None,FALSE,Acid,,FALSE,90,,,2, ,15,20,25,30,35,40,45,50,1,FALSE
-Mind Spike,Single,no,3d8,1,None,FALSE,Psychic,Save  0.5,FALSE,60,,Buff,2,,13.5,18,22.5,27,31.5,36,40.5,45,1,FALSE
-Moonbeam,AoE (small),no,2d10,1,None,TRUE,Radiant,Save  0.5,FALSE,120,,,2, ,11,16.5,22,27.5,33,38.5,44,49.5,2,FALSE
-Scorching Ray,Spread,no,2d6,3,None,FALSE,Fire,Attack roll,FALSE,120,,,2, ,21,28,35,42,49,56,63,70,1,FALSE
-Shadow Blade,Spread,no,2d8+DEX,1,Dexterity,FALSE,Psychic,Attack roll,FALSE,Melee,,,2,,9,13.5,13.5,18,18,22.5,22.5,22.5,1,FALSE
-Shatter,AoE,no,3d8,1,None,FALSE,Thunder,Save  0.5,FALSE,60,,,2, ,13.5,18,22.5,27,31.5,36,40.5,45,2.5,FALSE
-Snilloc's Snowball Swarm ,AoE (small),no,3d6,1,None,FALSE,Cold,Save  0.5,FALSE,90,,,2, ,10.5,14,17.5,21,24.5,28,31.5,35,2.5,FALSE
-Spike Growth,AoE (large),no,2d4,1,None,FALSE,Piercing, ,TRUE,150,,CC,2, ,5,5,5,5,5,5,5,5,2.5,FALSE
-Spiritual  Weapon,Spread,yes,1d8,1,Wisdom,TRUE,Force,Attack roll,FALSE,60,,BA,2, ,4.5,4.5,9,9,13.5,13.5,18,18,1,TRUE
-Blinding Smite,Single,yes, 3d8,1,None,FALSE,Radiant, ,FALSE,Melee,,Debuff,3, , ,13.5,13.5,13.5,13.5,13.5,13.5,13.5,1,FALSE
-Call Lightning,AoE (small),no,3d10,1,None,TRUE,Lightning,Save  0.5,FALSE,120,,,3, , ,16.5,22,27.5,33,38.5,44,49.5,2.5,FALSE
-Conjure Barrage,AoE (large),no,3d8,1,None,FALSE,varies,Save  0.5,FALSE,0,60,,3, , ,13.5,13.5,13.5,13.5,13.5,13.5,13.5,2.5,FALSE
-Erupting Earth ,AoE,no,3d12,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,CC,3, , ,19.5,26,32.5,39,45.5,52,58.5,2.5,FALSE
-Fireball,AoE (large),no,8d6,1,None,FALSE,Fire,Save  0.5,FALSE,150,,,3, , ,28,31.5,35,38.5,42,45.5,49,2.5,FALSE
-Glyph of Warding (Explosive Runes),AoE (large),no,5d8,1,None,FALSE,varies,Save  0.5,TRUE,Touch,,,3, , ,22.5,27,31.5,36,40.5,45,49.5,2.5,FALSE
-Hunger of Hadar,AoE (large),no,2d6+2d6,1,None,TRUE,combined,,FALSE,150,,CC,3, , ,14,14,14,14,14,14,14,2.5,FALSE
-Lightning Arrow,Single,no,4d8,1,None,FALSE,Lightning,Save  0.5,FALSE,0,,,3, , ,18,22.5,27,31.5,36,40.5,45,1,FALSE
-Lightning Arrow,AoE,no,2d8,1,None,FALSE,,Save  0.5,FALSE,,,,3, , ,9,13.5,18,22.5,27,31.5,36,2.5,FALSE
-Lightning Bolt,AoE (line),no,8d6,1,None,FALSE,Lightning,Save  0.5,FALSE,0,100,,3, , ,28,31.5,35,38.5,42,45.5,49,2.5,FALSE
-Melf's Minute Meteors ,AoE (small),no,2d6,2,None,TRUE,Fire,Save  0.5,FALSE,120,,,3, , ,14,14,14,14,14,14,14,2.5,FALSE
-Spirit Guardians,AoE,no,3d8,1,None,TRUE,varies,Save  0.5,TRUE,0,15,CC,3, , ,13.5,18,22.5,27,31.5,36,40.5,2.5,FALSE
-Thunder Step,AoE (small),no,3d10,1,None,FALSE,Thunder,Save  0.5,FALSE,0,10,Teleport,3,,,16.5,22,27.5,33,38.5,44,49.5,2.5,FALSE
-Tidal Wave ,AoE,no,4d8,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,Debuff,3, , ,18,18,18,18,18,18,18,2.5,FALSE
-Vampiric Touch,Single,no,3d6,1,None,FALSE,Necrotic,Attacks,FALSE,Touch,,Buff,3, , ,10.5,14,17.5,21,24.5,28,31.5,1,FALSE
-Blight,Single,no,8d8,1,None,FALSE,Necrotic,Save  0.5,FALSE,30,,,4, , , ,36,40.5,45,49.5,54,58.5,1,FALSE
-Evard's Black Tentacles,AoE,no,3d6,1,None,TRUE,Bludgeon,Save ends,FALSE,90,,CC,4, , , ,10.5,10.5,10.5,10.5,10.5,10.5,2.5,FALSE
-Fire Shield,Single,no,2d8/attack,1,None,FALSE,varies, ,FALSE,Melee,,Buff,4, , , ,9,9,9,9,9,9,1,FALSE
-Guardian of Faith,AoE,no,20 (total 60),1,None,FALSE,Radiant,Save  0.5,TRUE,30,,,4, , , ,20,20,20,20,20,20,2,FALSE
-Ice Storm,AoE (large),no,2d8+4d6,1,None,FALSE,combined,Save  0.5,FALSE,300,,CC,4, , , ,23,27.5,32,36.5,41,45.5,2.5,FALSE
-Mordenkainen's Faithful Hound,Spread,no,4d8,1,None,TRUE,Piercing,Attack roll,FALSE,30,,,4, , , ,18,18,18,18,18,18,1,FALSE
-Phantasmal Killer,Single,no,4d10,1,None,TRUE,Psychic,Save ends,FALSE,120,,Debuff,4, , , ,22,27.5,33,38.5,44,49.5,1,FALSE
-Shadow of Moil,Single,no,2d8/attack,1,None,FALSE,Necrotic,–,TRUE,Melee,,Buff,4,,,,9,9,9,9,9,9,4,FALSE
-Sickening Radiance,AoE (large),no,4d10,1,None,TRUE,Radiant,Save null,FALSE,120ft,,Debuff,4,,,,22,22,22,22,22,22,1,FALSE
-Staggering Smite,Single,yes, 4d6,1,None,FALSE,Psychic, ,FALSE,Melee,,Debuff,4, , , ,14,14,14,14,14,14,1,FALSE
-Storm Sphere ,AoE (large),no,2d6 +  4d6,1,None,TRUE,Bludgeon,Save null + Attack roll,FALSE,150,,CC,4, , , ,21,28,35,42,49,56,2.5,FALSE
-Vitriolic Sphere ,AoE (large),no,10d4+5d4,1,None,FALSE,Acid,Save third,FALSE,150,,,4, , , ,37.5,42.5,47.5,52.5,57.5,62.5,2.5,FALSE
-Wall of Fire,AoE (line),no,5d8,1,None,TRUE,Fire,Save  0.5,TRUE,120,,,4, , , ,22.5,27,31.5,36,40.5,45,2.5,FALSE
-Animate Objects (huge),Spread,no, 2d12+4,1.25,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,17,17,17,34,34,1,FALSE
-Animate Objects (large),Spread,no,2d10+2,2.5,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,26,39,39,52,52,1,FALSE
+Spell,Target/area,Incorporates Weapon,Base damage,Number of attacks,Modifier,Per Turn,Type,Defense,Reaction-based,Range,Effect Area,Effect,Base level,1,2,3,4,5,6,7,8,9,Multiplier,Bonus Action,Damage over time
+Cantrips,,,,,,,,,,,,,,Lv1,,Lv5,,,Lv11,,,Lv17,,,
+Acid Splash,x2,no,1d6,1,None,FALSE,Acid,Save null,FALSE,60,,,0,3.5,,7,,,10.5,,,14,2,FALSE,None
+Booming Blade,Single,yes,1d8,1,None,FALSE,Thunder,,FALSE,5,,,0,4.5,,13.5,,,22.5,,,31.5,1,FALSE,None
+Chill Touch,Single,no,1d8,1,None,FALSE,Necrotic,Attack roll,FALSE,120,,Debuff,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Create Bonfire,Single,no,1d8,1,None,TRUE,Fire,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Create Bonfire,Single,no,1d8,1,None,TRUE,Fire,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Eldritch Blast,Spread,no,1d10,1,None,FALSE,Force,Attack roll,FALSE,120,,,0,5.5,,11,,,16.5,,,22,1,FALSE,None
+Fire Bolt,Single,no,1d10,1,None,FALSE,Fire,Attack roll,FALSE,120,,,0,5.5,,11,,,16.5,,,22,1,FALSE,None
+Frostbite ,Single,no,1d6,1,None,FALSE,Cold,Save null,FALSE,60,,Debuff,0,3.5,,7,,,10.5,,,14,2,FALSE,None
+Greenflame Blade  ,x2,yes,1d8,1,None,FALSE,Fire,Attack roll,FALSE,5,,,0,4.5,,13.5,,,22.5,,,31.5,1,FALSE,None
+Infestation,Single,no,1d6,1,None,FALSE,Poison,Save null,FALSE,30,,CC,0,3.5,,7,,,10.5,,,14,1,FALSE,None
+Lightning Lure  ,Single,no,1d8,1,None,FALSE,Lightning,Save null,FALSE,15,,CC,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Poison Spray,Single,no,1d12,1,None,FALSE,Poison,Save null,FALSE,10,,,0,6.5,,13,,,19.5,,,26,1,FALSE,None
+Primal Savagery,Single,no,1d10,1,None,FALSE,Acid,Attack roll,FALSE,Melee,,,0,5.5,,11,,,16.5,,,22,1,FALSE,None
+Produce Flame,Single,no,1d8,1,None,FALSE,Fire,Attack roll,FALSE,30,,,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Ray of Frost,Single,no,1d8,1,None,FALSE,Cold,Attack roll,FALSE,60,,CC,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Sacred Flame,Single,no,1d8,1,None,FALSE,Radiant,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Shocking Grasp,Single,no,1d8,1,None,FALSE,Lightning,Attack roll,FALSE,Touch,,Debuff,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Sword Burst  ,AoE (small),no,1d6,1,None,FALSE,Force,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE,None
+Thorn Whip,Single,no,1d6,1,None,FALSE,Piercing,Attack roll,FALSE,30,,CC,0,3.5,,7,,,10.5,,,14,1,FALSE,None
+Thunderclap ,AoE (small),no,1d6,1,None,FALSE,Thunder,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE,None
+Toll the Dead,Single,no,1d8,1,None,FALSE,Necrotic,Save null,FALSE,60,,,0,4.5,,9,,,13.5,,,18,1,FALSE,None
+Vicious Mockery,Single,no,1d4,1,None,FALSE,Psychic,Save null,FALSE,60,,Debuff,0,2.5,,5,,,7.5,,,10,1,FALSE,None
+Word of Radiance,AoE (small),no,1d6,1,None,FALSE,Radiant,Save null,FALSE,0,5,,0,3.5,,7,,,10.5,,,14,2.5,FALSE,None
+Arms of Hadar,AoE,no,2d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,0,10,Debuff,1,7,10.5,14,17.5,21,24.5,28,31.5,35,2.5,FALSE,None
+Burning Hands,AoE,no,3d6,1,None,FALSE,Fire,Save  0.5,FALSE,0,15,,1,10.5,14,17.5,21,24.5,28,31.5,35,38.5,2.5,FALSE,None
+Catapult ,Single,no,3d8,1,None,FALSE,Bludgeon,Save null,FALSE,150,,,1,13.5,18,22.5,27,31.5,36,40.5,45,49.5,1,FALSE,None
+Chaos Bolt,Single,no,2d8+1d6,1,None,FALSE,varies,Attack roll,FALSE,120ft,,Fork,1,12.5,16,19.5,23,26.5,30,33.5,37,40.5,1,FALSE,None
+Chromatic Orb,Single,no,3d8,1,None,FALSE,varies,Attack roll,FALSE,90,,,1,13.5,18,22.5,27,31.5,36,40.5,45,49.5,1,FALSE,None
+Dissonant Whispers,Single,no,3d6,1,None,FALSE,Psychic,Save  0.5,FALSE,60,,CC,1,10.5,14,17.5,21,24.5,28,31.5,35,38.5,1,FALSE,None
+Earth Tremor ,AoE (small),no,1d6,1,None,FALSE,Bludgeon,Save null,FALSE,0,10,,1,3.5,7,10.5,14,17.5,21,24.5,28,31.5,2.5,FALSE,None
+Ensnaring Strike,Single,yes,1d6,1,None,TRUE,Piercing,Save ends,FALSE,0,,DoT,1,3.5,7,10.5,14,17.5,21,24.5,28,31.5,1,FALSE,None
+Guiding Bolt,Single,no,4d6,1,None,FALSE,Radiant,Attack roll,FALSE,120,,Buff,1,14,17.5,21,24.5,28,31.5,35,38.5,42,1,FALSE,None
+Hail of Thorns,AoE (small),yes,d10,1,None,FALSE,Piercing,Save  0.5,FALSE,0,,,1,5.5,11,16.5,22,27.5,33,33,33,33,2.5,FALSE,None
+Hellish Rebuke,Single,no,2d10,1,None,FALSE,Fire,Save  0.5,TRUE,60,,,1,11,16.5,22,27.5,33,38.5,44,49.5,55,1,FALSE,None
+Ice Knife ,Single + AoE,no,1d10+2d6,1,None,FALSE,combined,Attack roll + Save null,FALSE,60,,,1,12.5,16,19.5,23,26.5,30,33.5,37,40.5,1,FALSE,None
+Inflict Wounds,Single,no,3d10,1,None,FALSE,Necrotic,Attack roll,FALSE,Touch,,,1,16.5,22,27.5,33,38.5,44,49.5,55,60.5,1,FALSE,None
+Magic Missile,Spread,no,1d4+1,3,None,FALSE,Force, ,FALSE,120,,,1,10.5,14,17.5,21,24.5,28,31.5,35,38.5,1,FALSE,None
+Ray of Sickness,Single,no,2d8,1,None,FALSE,Poison,Attack roll,FALSE,60,,Debuff,1,9,13.5,18,22.5,27,31.5,36,40.5,45,1,FALSE,None
+Searing Smite,Single,yes, 1d6,1,None,TRUE,Fire,Save ends,FALSE,Melee,,DoT,1,3.5,7,10.5,14,17.5,21,24.5,28,31.5,1,FALSE,None
+Thunderous Smite,Single,yes, 2d6,1,None,FALSE,Thunder, ,FALSE,Melee,,CC,1,7,7,7,7,7,7,7,7,7,1,FALSE,None
+Thunderwave,AoE,no,2d8,1,None,FALSE,Thunder,Save  0.5,FALSE,0,15,CC,1,9,13.5,18,22.5,27,31.5,36,40.5,45,2.5,FALSE,None
+Witch Bolt,Single,no,1d12+1d12,1,None,TRUE,Lightning,Attack roll,FALSE,30,,DoT,1,6.5,13,19.5,26,32.5,39,45.5,52,58.5,1,FALSE,Use action
+Wrathful Smite,Single,yes, 1d6,1,None,FALSE,Psychic, ,FALSE,Melee,,Debuff,1,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,3.5,1,FALSE,None
+Aganazzar's Scorcher ,AoE (line),no,3d8,1,None,FALSE,Fire,Save  0.5,FALSE,0,30,,2, ,13.5,18,22.5,27,31.5,36,40.5,45,2.5,FALSE,None
+Branding Smite,Single,yes,2d6,1,None,FALSE,Radiant, ,FALSE,0,,Debuff,2, ,7,10.5,14,17.5,21,24.5,28,31.5,1,FALSE,None
+Cloud of Daggers,Single,no,4d4,1,None,TRUE,Slashing, ,start of turn,60,,,2, ,10,15,20,25,30,35,40,45,1,FALSE,TRUE
+Cordon of Arrows,Spread,no,1d6,4,None,FALSE,Piercing,Save null,FALSE,5,30,,2, ,14,21,28,35,42,49,56,63,1,FALSE,None
+Dragon’s Breath,AoE (small),no,3d6,1,None,FALSE,varies,Save  0.5,FALSE,0,15,,2,,10.5,15,19.5,24,28.5,33,37.5,42,2.5,FALSE,Use bonus
+Dust Devil ,AoE (small),no,1d8,1,None,TRUE,Bludgeon,Save  0.5,FALSE,60,,CC,2, ,4.5,9,13.5,18,22.5,27,31.5,36,2.5,FALSE,None
+Flame Blade,Spread,no,3d6,1,None,TRUE,Fire,Attack roll,FALSE,Melee,,,2, ,10.5,10.5,14,14,17.5,17.5,21,21,1,FALSE,None
+Flaming Sphere,AoE (small),no,2d6,1,None,TRUE,Fire,Save  0.5,FALSE,60,,BA,2, ,7,10.5,14,17.5,21,24.5,28,31.5,2.5,TRUE,TRUE
+Heat Metal,Single,no,2d8,1,None,TRUE,Fire, ,FALSE,60,,"[Debuff, BA]",2, ,9,13.5,18,22.5,27,31.5,36,40.5,1,TRUE,Use bonus
+Maximillian's Earthen Grasp ,Single,no,2d6,1,None,TRUE,Bludgeon,Save ends,FALSE,30,,Debuff,2, ,7,7,7,7,7,7,7,7,1,FALSE,None
+Melf's Acid Arrow,Single,no,4d4+2d4,1,None,FALSE,Acid,,FALSE,90,,,2, ,15,20,25,30,35,40,45,50,1,FALSE,None
+Mind Spike,Single,no,3d8,1,None,FALSE,Psychic,Save  0.5,FALSE,60,,Buff,2,,13.5,18,22.5,27,31.5,36,40.5,45,1,FALSE,None
+Moonbeam,AoE (small),no,2d10,1,None,TRUE,Radiant,Save  0.5,FALSE,120,,,2, ,11,16.5,22,27.5,33,38.5,44,49.5,2,FALSE,Use action
+Scorching Ray,Spread,no,2d6,3,None,FALSE,Fire,Attack roll,FALSE,120,,,2, ,21,28,35,42,49,56,63,70,1,FALSE,None
+Shadow Blade,Spread,no,2d8,1,Dexterity,FALSE,Psychic,Attack roll,FALSE,Melee,,,2,,9,13.5,13.5,18,18,22.5,22.5,22.5,1,FALSE,Use action
+Shatter,AoE,no,3d8,1,None,FALSE,Thunder,Save  0.5,FALSE,60,,,2, ,13.5,18,22.5,27,31.5,36,40.5,45,2.5,FALSE,None
+Snilloc's Snowball Swarm ,AoE (small),no,3d6,1,None,FALSE,Cold,Save  0.5,FALSE,90,,,2, ,10.5,14,17.5,21,24.5,28,31.5,35,2.5,FALSE,None
+Spike Growth,AoE (large),no,2d4,1,None,FALSE,Piercing, ,TRUE,150,,CC,2, ,5,5,5,5,5,5,5,5,2.5,FALSE,None
+Spiritual  Weapon,Spread,yes,1d8,1,Wisdom,TRUE,Force,Attack roll,FALSE,60,,BA,2, ,4.5,4.5,9,9,13.5,13.5,18,18,1,TRUE,None
+Blinding Smite,Single,yes, 3d8,1,None,FALSE,Radiant, ,FALSE,Melee,,Debuff,3, , ,13.5,13.5,13.5,13.5,13.5,13.5,13.5,1,FALSE,None
+Call Lightning,AoE (small),no,3d10,1,None,TRUE,Lightning,Save  0.5,FALSE,120,,,3, , ,16.5,22,27.5,33,38.5,44,49.5,2.5,FALSE,None
+Conjure Barrage,AoE (large),no,3d8,1,None,FALSE,varies,Save  0.5,FALSE,0,60,,3, , ,13.5,13.5,13.5,13.5,13.5,13.5,13.5,2.5,FALSE,None
+Erupting Earth ,AoE,no,3d12,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,CC,3, , ,19.5,26,32.5,39,45.5,52,58.5,2.5,FALSE,None
+Fireball,AoE (large),no,8d6,1,None,FALSE,Fire,Save  0.5,FALSE,150,,,3, , ,28,31.5,35,38.5,42,45.5,49,2.5,FALSE,None
+Glyph of Warding (Explosive Runes),AoE (large),no,5d8,1,None,FALSE,varies,Save  0.5,TRUE,Touch,,,3, , ,22.5,27,31.5,36,40.5,45,49.5,2.5,FALSE,None
+Hunger of Hadar,AoE (large),no,2d6+2d6,1,None,TRUE,combined,,FALSE,150,,CC,3, , ,14,14,14,14,14,14,14,2.5,FALSE,TRUE
+Lightning Arrow,Single,no,4d8,1,None,FALSE,Lightning,Save  0.5,FALSE,0,,,3, , ,18,22.5,27,31.5,36,40.5,45,1,FALSE,None
+Lightning Arrow,AoE,no,2d8,1,None,FALSE,,Save  0.5,FALSE,,,,3, , ,9,13.5,18,22.5,27,31.5,36,2.5,FALSE,None
+Lightning Bolt,AoE (line),no,8d6,1,None,FALSE,Lightning,Save  0.5,FALSE,0,100,,3, , ,28,31.5,35,38.5,42,45.5,49,2.5,FALSE,None
+Melf's Minute Meteors ,AoE (small),no,2d6,2,None,TRUE,Fire,Save  0.5,FALSE,120,,,3, , ,14,14,14,14,14,14,14,2.5,Subsquent,None
+Spirit Guardians,AoE,no,3d8,1,None,TRUE,varies,Save  0.5,start of turn,0,15,CC,3, , ,13.5,18,22.5,27,31.5,36,40.5,2.5,FALSE,None
+Thunder Step,AoE (small),no,3d10,1,None,FALSE,Thunder,Save  0.5,FALSE,0,10,Teleport,3,,,16.5,22,27.5,33,38.5,44,49.5,2.5,FALSE,None
+Tidal Wave ,AoE,no,4d8,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,Debuff,3, , ,18,18,18,18,18,18,18,2.5,FALSE,None
+Vampiric Touch,Single,no,3d6,1,None,FALSE,Necrotic,Attacks,FALSE,Touch,,Buff,3, , ,10.5,14,17.5,21,24.5,28,31.5,1,FALSE,None
+Blight,Single,no,8d8,1,None,FALSE,Necrotic,Save  0.5,FALSE,30,,,4, , , ,36,40.5,45,49.5,54,58.5,1,FALSE,None
+Evard's Black Tentacles,AoE,no,3d6,1,None,TRUE,Bludgeon,Save ends,FALSE,90,,CC,4, , , ,10.5,10.5,10.5,10.5,10.5,10.5,2.5,FALSE,TRUE
+Fire Shield,Single,no,2d8,1,None,FALSE,varies, ,Per attack,Melee,,Buff,4, , , ,9,9,9,9,9,9,1,FALSE,None
+Guardian of Faith,AoE,no,20 (total 60),1,None,FALSE,Radiant,Save  0.5,Movement,30,,,4, , , ,20,20,20,20,20,20,2,FALSE,None
+Ice Storm,AoE (large),no,2d8+4d6,1,None,FALSE,combined,Save  0.5,FALSE,300,,CC,4, , , ,23,27.5,32,36.5,41,45.5,2.5,FALSE,None
+Mordenkainen's Faithful Hound,Spread,no,4d8,1,None,TRUE,Piercing,Attack roll,FALSE,30,,,4, , , ,18,18,18,18,18,18,1,FALSE,None
+Phantasmal Killer,Single,no,4d10,1,None,TRUE,Psychic,Save ends,FALSE,120,,Debuff,4, , , ,22,27.5,33,38.5,44,49.5,1,FALSE,None
+Shadow of Moil,Single,no,2d8/attack,1,None,FALSE,Necrotic,–,TRUE,Melee,,Buff,4,,,,9,9,9,9,9,9,4,FALSE,None
+Sickening Radiance,AoE (large),no,4d10,1,None,TRUE,Radiant,Save null,FALSE,120ft,,Debuff,4,,,,22,22,22,22,22,22,1,FALSE,TRUE
+Staggering Smite,Single,yes, 4d6,1,None,FALSE,Psychic, ,FALSE,Melee,,Debuff,4, , , ,14,14,14,14,14,14,1,FALSE,None
+Storm Sphere ,AoE (large),no,2d6 +  4d6,1,None,TRUE,Bludgeon,Save null + Attack roll,FALSE,150,,CC,4, , , ,21,28,35,42,49,56,2.5,Subsquent,None
+Vitriolic Sphere ,AoE (large),no,10d4+5d4,1,None,FALSE,Acid,Save third,FALSE,150,,,4, , , ,37.5,42.5,47.5,52.5,57.5,62.5,2.5,FALSE,None
+Wall of Fire,AoE (line),no,5d8,1,None,TRUE,Fire,Save  0.5,TRUE,120,,,4, , , ,22.5,27,31.5,36,40.5,45,2.5,End of Turn,None
+Animate Objects (huge),Spread,no, 2d12+4,1.25,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,17,17,17,34,34,1,Subsquent,None
+Animate Objects (large),Spread,no,2d10+2,2.5,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,26,39,39,52,52,1,Subsquent,None
 Animate Objects (medium),Spread,no,"2d6+1
-",5,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,40,48,56,64,72,1,FALSE
-Animate Objects (small),Spread,no,1d8+2,10,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,65,78,91,104,117,1,FALSE
-Animate Objects (tiny),Spread,no,1d4+4,10,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,65,78,91,104,117,1,FALSE
-Banishing Smite,Single,yes, 5d10,1,None,FALSE,Force, ,FALSE,0,,KO,5, , , , ,27.5,27.5,27.5,27.5,27.5,1,FALSE
-Bigby's Hand (crush),Spread,no,2d6,1,None,TRUE,,Save ends,FALSE,120,,"CC, BA",5, , , , ,7,14,21,28,35,1,TRUE
-Bigby's Hand (punch),Spread,no,4d8,1,None,TRUE,Force,Attack roll,FALSE,120,,BA,5, , , , ,18,27,36,45,54,1,TRUE
-Cloudkill,AoE (large),no,5d8,1,None,TRUE,Poison,Save  0.5,FALSE,120,,CC,5, , , , ,22.5,27,31.5,36,40.5,2.5,FALSE
-Cone of Cold,AoE (large),no,8d8,1,None,FALSE,Cold,Save  0.5,FALSE,0,60,,5, , , , ,36,40.5,45,49.5,54,2.5,FALSE
-Conjure Volley,AoE (large),no,8d8,1,None,FALSE,varies,Save  0.5,FALSE,150,,,5, , , , ,36,36,36,36,36,2.5,FALSE
-Dawn,AoE (large),no,4d10,1,None,TRUE,Radiant,Save  0.5,FALSE,60ft,,BA,5,,,,,22,22,22,22,22,2.5,TRUE
-Destructive Wave,AoE (large),no,5d6+5d6,1,None,FALSE,combined,Save  0.5,FALSE,0,30,Debuff,5, , , , ,35,35,35,35,35,2.5,FALSE
-Enervation,Single,no,4d8,1,None,FALSE,Necrotic,Save  0.5,FALSE,60ft,,Drain,5,,,,,18,22.5,27,31.5,36,1,FALSE
-Enervation,Single,no,2d8,1,None,TRUE,Necrotic,?,FALSE,,,Drain,5,,,,,9,13.5,18,22.5,27,1,FALSE
-Flame Strike,AoE,no,4d6+4d6,1,None,FALSE,combined,Save  0.5,FALSE,60,,,5, , , , ,28,31.5,35,38.5,42,2.5,FALSE
-Immolation ,Single,no,8d6 + 4d6,1,None,TRUE,Fire,,FALSE,90,,,5, , , , ,42,42,42,42,42,1,FALSE
-Insect Plague,AoE (large),no,4d10,1,None,TRUE,Piercing,Save  0.5,FALSE,300,,CC,5, , , , ,22,27.5,33,38.5,44,2.5,FALSE
-Maelstrom ,AoE (large),no,6d6,1,None,TRUE,Bludgeon,Save null,FALSE,120,,CC,5, , , , ,21,21,21,21,21,2.5,FALSE
-Negative Energy Flood,Single,no,5d12,1,None,FALSE,Necrotic,Save  0.5,FALSE,60ft,,,5,,,,,32.5,32.5,32.5,32.5,32.5,1,FALSE
-Steel Wind Strike,x5,no,6d10,1,None,FALSE,Force,Attack roll,FALSE,30ft,,,5,,,,,33,33,33,33,33,1,FALSE
-Synaptic Static,AoE (large),no,8d6,1,None,FALSE,Psychic,Save  0.5,FALSE,120ft,,Debuff,5,,,,,28,28,28,28,28,2.5,FALSE
-Transmute Rock  (Ceiling to mud),AoE (large),no,4d8,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,CC,5, , , , ,18,18,18,18,18,2.5,FALSE
-Wall of Light,AoE (line),no,4d8,1,None,TRUE,Radiant,Save  0.5,FALSE,120ft,,Debuff,5,,,,,18,22.5,27,31.5,36,2.5,FALSE
-Wall of Light,Single,no,4d8,1,None,TRUE,Radiant,Attack roll,FALSE,60ft,,,5,,,,,18,22.5,27,31.5,36,1,FALSE
-Wrath of Nature (Rocks),Single,no,3d8,1,None,TRUE,Bludgeon,Attack roll,FALSE,120ft,,CC,5,,,,,13.5,13.5,13.5,13.5,13.5,1,FALSE
-Wrath of Nature (Trees),AoE (large),no,4d6,1,None,TRUE,Slashing,Save null,FALSE,120ft,,,5,,,,,14,14,14,14,14,2.5,FALSE
-Blade Barrier,AoE,no,6d10,1,None,FALSE,Slashing,Save  0.5,TRUE,90,,CC,6, , , , , ,33,33,33,33,2.5,FALSE
-Bones of Earth  (Crush to ceiling),x6,no,6d6,1,None,FALSE,Bludgeon,Save null,FALSE,120,,,6, , , , , ,21,21,21,21,1,FALSE
-Chain Lightning,x4,no,10d8,1,None,FALSE,Lightning,Save  0.5,FALSE,150,,,6, , , , , ,180,225,270,315,1,FALSE
-Circle of Death,AoE (huge),no,8d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,150,,,6, , , , , ,28,35,42,49,2.5,FALSE
-Disintegrate,Single,no,10d6+40,1,None,FALSE,Force,Save null,FALSE,60,,,6, , , , , ,75,85.5,96,106.5,2.5,FALSE
-Harm,Single,no,14d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,60,,Debuff,6, , , , , ,49,49,49,49,1,FALSE
-Mental Prison,Single,no,5d10+10d10,1,None,FALSE,Psychic,,FALSE,60ft,CC,CC,6,,,,,,82.5,82.5,82.5,82.5,1,FALSE
-Mental Prison,#NAME?,no,5d10,1,None,FALSE,,?,FALSE,,,?,6,,,,,,27.5,27.5,27.5,27.5,1,FALSE
-Mental Prison,#NAME?,no,10d10,1,None,FALSE,,Save null,FALSE,,,?,6,,,,,,55,55,55,55,1,FALSE
-Otiluke's Freezing Sphere,AoE (huge),no,10d6,1,None,FALSE,Cold,Save  0.5,FALSE,300,,,6, , , , , ,35,38.5,42,45.5,2.5,FALSE
-Sunbeam,AoE (line),no,6d8,1,None,TRUE,Radiant,Save  0.5,FALSE,0,60,Debuff,6, , , , , ,27,27,27,27,2.5,FALSE
-Wall of Thorns,AoE,no,7d8,1,None,TRUE,Piercing,Save  0.5,FALSE,120,,CC,6, , , , , ,31.5,36,40.5,45,2.5,FALSE
-Symbol (Death),AoE (huge),no,10d10,1,None,TRUE,Necrotic,Save  0.5,FALSE,0,60,,7, , , , , , ,55,55,55,2.5,FALSE
-Prismatic Spray,AoE (random),no,10d6,1,None,FALSE,varies,Save  0.5,FALSE,0,60,Debuff,7, , , , , , ,35,35,35,2.5,FALSE
-Whirlwind ,AoE,no,10d6,1,None,TRUE,Bludgeon,Save  0.5,FALSE,300,,CC,7, , , , , , ,35,35,35,2.5,FALSE
-Delayed Blast Fireball,AoE (large),no,12d6 + 1d6,1,None,TRUE,Fire,Save  0.5,FALSE,150,,,7, , , , , , ,42,45.5,49,2.5,FALSE
-Delayed Blast Fireball,,no,22d6,1,None,FALSE,,Save  0.5,FALSE,,,,7, , , , , , ,77,80.5,84,2.5,FALSE
-Mordenkainen's Sword,Spread,no,3d10,1,None,TRUE,Force,Attack roll,FALSE,60,,BA,7, , , , , , ,16.5,16.5,16.5,1,TRUE
-Crown of Stars,Spread,no,4d12,1,None,TRUE,Radiant,Attack roll,FALSE,120ft,,BA,7,,,,,,,26,26,26,1,TRUE
-Fire Storm,AoE (large),no,7d10,1,None,FALSE,Fire,Save  0.5,FALSE,150,,,7, , , , , , ,38.5,38.5,38.5,2.5,FALSE
-Finger of Death,Single,no,7d8+30,1,None,FALSE,Necrotic,Save  0.5,FALSE,60,,,7, , , , , , ,61.5,61.5,61.5,1,FALSE
-Abi-Dalzim's Horrid Wilting,AoE,no,10d8,1,None,FALSE,Necrotic,Save  0.5,FALSE,150,,,8, , , , , , , ,45,45,2.5,FALSE
-Feeblemind,Single,no,4d6,1,None,FALSE,Psychic, ,FALSE,150,,Debuff,8, , , , , , , ,14,14,1,FALSE
-Illusory Dragon,AoE (huge),no,7d6,1,None,TRUE,varies,Save  0.5,FALSE,120ft,"Debuff, BA","Debuff, BA",8,,,,,,20.42,20.42,24.5,24.5,2.5,TRUE
-Incendiary Cloud,AoE (large),no,10d8,1,None,TRUE,Fire,Save  0.5,FALSE,150,,Debuff,8,,,,,, , ,45,45,2.5,FALSE
-Maddening Darkness,AoE (huge),no,8d8,1,None,TRUE,Psychic,Save  0.5,FALSE,150ft,CC,CC,8,,,,,,30,30,36,36,2.5,FALSE
-Sunburst,AoE (huge),no,12d6,1,None,FALSE,Radiant,Save  0.5,FALSE,150,,Debuff,8, , , , , , , ,42,42,2.5,FALSE
-Tsunami,AoE (huge+),no,6d10 -1d10,1,None,TRUE,Bludgeon,Save  0.5,FALSE,Sight,,CC,8, , , , , , , ,33,33,2.5,FALSE
-Meteor Swarm,AoE (huge+),no,20d6+20d6,1,None,FALSE,varies,Save  0.5,FALSE,1.6,,,9, , , , , , , , ,140,2.5,FALSE
-Prismatic Wall,AoE (line),no,10d6/layer,1,None,FALSE,varies,Save  0.5,TRUE,60,,CC,9, , , , , , , , ,35,2.5,FALSE
-Psychic Scream,x10,no,14d6,1,None,FALSE,Psychic,Save  0.5,FALSE,90ft,,Debuff,9,,,,,,,,,49,10,FALSE
-Weird,AoE (large),no,4d10,1,None,TRUE,Psychic,Save ends,FALSE,120,,Debuff,9, , , , , , , , ,22,2.5,FALSE
+",5,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,40,48,56,64,72,1,Subsquent,None
+Animate Objects (small),Spread,no,1d8+2,10,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,65,78,91,104,117,1,Subsquent,None
+Animate Objects (tiny),Spread,no,1d4+4,10,None,FALSE,Bludgeon,Attack roll,FALSE,500,,,5, , , , ,65,78,91,104,117,1,Subsquent,None
+Banishing Smite,Single,yes, 5d10,1,None,FALSE,Force, ,FALSE,0,,KO,5, , , , ,27.5,27.5,27.5,27.5,27.5,1,FALSE,None
+Bigby's Hand (crush),Spread,no,2d6,1,None,TRUE,,Save ends,FALSE,120,,"CC, BA",5, , , , ,7,14,21,28,35,1,TRUE,None
+Bigby's Hand (punch),Spread,no,4d8,1,None,TRUE,Force,Attack roll,FALSE,120,,BA,5, , , , ,18,27,36,45,54,1,TRUE,None
+Cloudkill,AoE (large),no,5d8,1,None,TRUE,Poison,Save  0.5,FALSE,120,,CC,5, , , , ,22.5,27,31.5,36,40.5,2.5,FALSE,TRUE
+Cone of Cold,AoE (large),no,8d8,1,None,FALSE,Cold,Save  0.5,FALSE,0,60,,5, , , , ,36,40.5,45,49.5,54,2.5,FALSE,None
+Conjure Volley,AoE (large),no,8d8,1,None,FALSE,varies,Save  0.5,FALSE,150,,,5, , , , ,36,36,36,36,36,2.5,FALSE,None
+Dawn,AoE (large),no,4d10,1,None,TRUE,Radiant,Save  0.5,FALSE,60ft,,BA,5,,,,,22,22,22,22,22,2.5,TRUE,None
+Destructive Wave,AoE (large),no,5d6+5d6,1,None,FALSE,combined,Save  0.5,FALSE,0,30,Debuff,5, , , , ,35,35,35,35,35,2.5,FALSE,None
+Enervation,Single,no,4d8,1,None,FALSE,Necrotic,Save  0.5,FALSE,60ft,,Drain,5,,,,,18,22.5,27,31.5,36,1,FALSE,None
+Enervation,Single,no,2d8,1,None,TRUE,Necrotic,?,FALSE,,,Drain,5,,,,,9,13.5,18,22.5,27,1,FALSE,None
+Flame Strike,AoE,no,4d6+4d6,1,None,FALSE,combined,Save  0.5,FALSE,60,,,5, , , , ,28,31.5,35,38.5,42,2.5,FALSE,None
+Immolation ,Single,no,8d6 + 4d6,1,None,TRUE,Fire,,FALSE,90,,,5, , , , ,42,42,42,42,42,1,FALSE,None
+Insect Plague,AoE (large),no,4d10,1,None,TRUE,Piercing,Save  0.5,FALSE,300,,CC,5, , , , ,22,27.5,33,38.5,44,2.5,FALSE,None
+Maelstrom ,AoE (large),no,6d6,1,None,TRUE,Bludgeon,Save null,FALSE,120,,CC,5, , , , ,21,21,21,21,21,2.5,FALSE,None
+Negative Energy Flood,Single,no,5d12,1,None,FALSE,Necrotic,Save  0.5,FALSE,60ft,,,5,,,,,32.5,32.5,32.5,32.5,32.5,1,FALSE,None
+Steel Wind Strike,x5,no,6d10,1,None,FALSE,Force,Attack roll,FALSE,30ft,,,5,,,,,33,33,33,33,33,1,FALSE,None
+Synaptic Static,AoE (large),no,8d6,1,None,FALSE,Psychic,Save  0.5,FALSE,120ft,,Debuff,5,,,,,28,28,28,28,28,2.5,FALSE,None
+Transmute Rock  (Ceiling to mud),AoE (large),no,4d8,1,None,FALSE,Bludgeon,Save  0.5,FALSE,120,,CC,5, , , , ,18,18,18,18,18,2.5,FALSE,None
+Wall of Light,AoE (line),no,4d8,1,None,TRUE,Radiant,Save  0.5,FALSE,120ft,,Debuff,5,,,,,18,22.5,27,31.5,36,2.5,FALSE,None
+Wall of Light,Single,no,4d8,1,None,TRUE,Radiant,Attack roll,FALSE,60ft,,,5,,,,,18,22.5,27,31.5,36,1,FALSE,None
+Wrath of Nature (Rocks),Single,no,3d8,1,None,TRUE,Bludgeon,Attack roll,FALSE,120ft,,CC,5,,,,,13.5,13.5,13.5,13.5,13.5,1,FALSE,None
+Wrath of Nature (Trees),AoE (large),no,4d6,1,None,TRUE,Slashing,Save null,FALSE,120ft,,,5,,,,,14,14,14,14,14,2.5,FALSE,None
+Blade Barrier,AoE,no,6d10,1,None,FALSE,Slashing,Save  0.5,TRUE,90,,CC,6, , , , , ,33,33,33,33,2.5,FALSE,None
+Bones of Earth  (Crush to ceiling),x6,no,6d6,1,None,FALSE,Bludgeon,Save null,FALSE,120,,,6, , , , , ,21,21,21,21,1,FALSE,None
+Chain Lightning,x4,no,10d8,1,None,FALSE,Lightning,Save  0.5,FALSE,150,,,6, , , , , ,180,225,270,315,1,FALSE,None
+Circle of Death,AoE (huge),no,8d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,150,,,6, , , , , ,28,35,42,49,2.5,FALSE,None
+Disintegrate,Single,no,10d6+40,1,None,FALSE,Force,Save null,FALSE,60,,,6, , , , , ,75,85.5,96,106.5,2.5,FALSE,None
+Harm,Single,no,14d6,1,None,FALSE,Necrotic,Save  0.5,FALSE,60,,Debuff,6, , , , , ,49,49,49,49,1,FALSE,None
+Mental Prison,Single,no,5d10+10d10,1,None,FALSE,Psychic,,FALSE,60ft,CC,CC,6,,,,,,82.5,82.5,82.5,82.5,1,FALSE,None
+Mental Prison,,no,5d10,1,None,FALSE,,?,FALSE,,,?,6,,,,,,27.5,27.5,27.5,27.5,1,FALSE,None
+Mental Prison,,no,10d10,1,None,FALSE,,Save null,FALSE,,,?,6,,,,,,55,55,55,55,1,FALSE,None
+Otiluke's Freezing Sphere,AoE (huge),no,10d6,1,None,FALSE,Cold,Save  0.5,FALSE,300,,,6, , , , , ,35,38.5,42,45.5,2.5,FALSE,None
+Sunbeam,AoE (line),no,6d8,1,None,TRUE,Radiant,Save  0.5,FALSE,0,60,Debuff,6, , , , , ,27,27,27,27,2.5,FALSE,None
+Wall of Thorns,AoE,no,7d8,1,None,TRUE,Piercing,Save  0.5,FALSE,120,,CC,6, , , , , ,31.5,36,40.5,45,2.5,FALSE,None
+Symbol (Death),AoE (huge),no,10d10,1,None,TRUE,Necrotic,Save  0.5,FALSE,0,60,,7, , , , , , ,55,55,55,2.5,FALSE,None
+Prismatic Spray,AoE (random),no,10d6,1,None,FALSE,varies,Save  0.5,FALSE,0,60,Debuff,7, , , , , , ,35,35,35,2.5,FALSE,None
+Whirlwind ,AoE,no,10d6,1,None,FALSE,Bludgeon,Save  0.5,FALSE,300,,CC,7, , , , , , ,35,35,35,2.5,FALSE,None
+Mordenkainen's Sword,Spread,no,3d10,1,None,TRUE,Force,Attack roll,FALSE,60,,BA,7, , , , , , ,16.5,16.5,16.5,1,TRUE,None
+Crown of Stars,Spread,no,4d12,1,None,TRUE,Radiant,Attack roll,FALSE,120ft,,BA,7,,,,,,,26,26,26,1,TRUE,None
+Fire Storm,AoE (large),no,7d10,1,None,FALSE,Fire,Save  0.5,FALSE,150,,,7, , , , , , ,38.5,38.5,38.5,2.5,FALSE,None
+Finger of Death,Single,no,7d8+30,1,None,FALSE,Necrotic,Save  0.5,FALSE,60,,,7, , , , , , ,61.5,61.5,61.5,1,FALSE,None
+Abi-Dalzim's Horrid Wilting,AoE,no,10d8,1,None,FALSE,Necrotic,Save  0.5,FALSE,150,,,8, , , , , , , ,45,45,2.5,FALSE,None
+Feeblemind,Single,no,4d6,1,None,FALSE,Psychic, ,FALSE,150,,Debuff,8, , , , , , , ,14,14,1,FALSE,None
+Illusory Dragon,AoE (huge),no,7d6,1,None,TRUE,varies,Save  0.5,FALSE,120ft,"Debuff, BA","Debuff, BA",8,,,,,,20.42,20.42,24.5,24.5,2.5,TRUE,Use bonus
+Incendiary Cloud,AoE (large),no,10d8,1,None,TRUE,Fire,Save  0.5,FALSE,150,,Debuff,8,,,,,, , ,45,45,2.5,FALSE,None
+Maddening Darkness,AoE (huge),no,8d8,1,None,TRUE,Psychic,Save  0.5,FALSE,150ft,CC,CC,8,,,,,,30,30,36,36,2.5,FALSE,None
+Sunburst,AoE (huge),no,12d6,1,None,FALSE,Radiant,Save  0.5,FALSE,150,,Debuff,8, , , , , , , ,42,42,2.5,FALSE,None
+Tsunami,AoE (huge+),no,6d10 -1d10,1,None,TRUE,Bludgeon,Save  0.5,FALSE,Sight,,CC,8, , , , , , , ,33,33,2.5,FALSE,None
+Meteor Swarm,AoE (huge+),no,20d6+20d6,1,None,FALSE,varies,Save  0.5,FALSE,1.6,,,9, , , , , , , , ,140,2.5,FALSE,None
+Prismatic Wall,AoE (line),no,10d6/layer,1,None,FALSE,varies,Save  0.5,TRUE,60,,CC,9, , , , , , , , ,35,2.5,FALSE,None
+Psychic Scream,x10,no,14d6,1,None,FALSE,Psychic,Save  0.5,FALSE,90ft,,Debuff,9,,,,,,,,,49,10,FALSE,None
+Weird,AoE (large),no,4d10,1,None,TRUE,Psychic,Save ends,FALSE,120,,Debuff,9, , , , , , , , ,22,2.5,FALSE,None
